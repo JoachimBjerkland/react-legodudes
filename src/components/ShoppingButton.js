@@ -1,3 +1,7 @@
 export default function ShoppingButton() {
-    return <button>Legg i handlekurv</button>
+    const handleShopping = () => {
+        console.log("Du har shoppet")
+    }
+
+    return <button onClick={handleShopping}>Legg i handlekurv</button>
 }
