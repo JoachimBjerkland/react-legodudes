@@ -1,5 +1,17 @@
-body {
-  background-color: blue;
-}
+/* Error: expected ";".
+ *    ,
+ * 41 |     @include default-box(#fff, 300px, $legoblack, 1rem)
+ *    |                                                        ^
+ *    '
+ *   src\sass\main.scss 41:56  root stylesheet */
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvbWFpbi5zY3NzIiwibWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxzQkFBQTtBQ0NKIiwiZmlsZSI6Im1haW4uY3NzIn0= */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected ";".\a    \2577 \a 41 \2502      @include default-box(#fff, 300px, $legoblack, 1rem)\d\a    \2502                                                         ^\a    \2575 \a   src\\sass\\main.scss 41:56  root stylesheet';
+}
